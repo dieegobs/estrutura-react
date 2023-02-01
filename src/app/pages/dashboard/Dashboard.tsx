@@ -3,15 +3,15 @@ import {Link} from 'react-router-dom'
 
 export const Dashboard = () => {
 
-const counterRef = useRef({counter: 0 });
+const counterRef = useRef(0);
 
     return (
         <div>
             <h1>Dashboard</h1>
 
-        <p>Contador: {counterRef.current.counter}</p>
-        <button onClick={()=>counterRef.current.counter++ }>Somar</button>
-        <button onClick={()=>console.log(counterRef.current.counter)}>Console</button>
+        <p>Contador: {counterRef.current}</p>
+        <button onClick={()=>counterRef.current++ }>Somar</button>
+        <button onClick={()=>console.log(counterRef.current)}>Console</button>
             <Link to={"/entrar"}>login</Link>
         </div>
 
