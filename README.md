@@ -1,1 +1,1 @@
-# Projeto React Estrutura
+# Projeto React Estrutura | Typescript
